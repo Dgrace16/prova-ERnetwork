@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+div.content {
+    margin-bottom: 36px;
+}
+figure {
+    position: relative;
+}
+
+figure:before,
+figure:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+div.content {
+    margin: 40px 40px 80px 40px;
+    -o-background-size: cover;
+    /*Css Opera*/
+}
+
+.mat-table {
+    width: 100%;
+}
+
+//Desaparece com os botões editar e excluir das tabelas de listagem
+.mat-row .mat-raised-button {
+    visibility: hidden;
+}
+
+//Reexibe os botões na linha sob o cursor do mouse
+.mat-row:hover .mat-raised-button {
+    visibility: visible;
+}
+
+//Coloca um leve destaque na linha sob o mouse 
+.mat-row:hover {
+    filter: brightness(85%);
+}
+
+.new-item {
+    background-color: transparent;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center;
+
+    a {
+        font-size: 110%;
+    }
+
+}
+
+.std-form {
+    max-width: 80%;
+    margin: 0 auto;
+
+    mat-form-field {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .form-buttons {
+        background: transparent;
+
+        mat-toolbar-row {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
